@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "tweet-bot"
+version = "0.1.0"
+description = "beep bop"
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+selenium = "^4.24.0"
+beautifulsoup4 = "^4.12.3"
+load-dotenv = "^0.1.0"
+openai = "^1.44.0"
+inquirer = "^3.4.0"
+together = "^1.2.11"
+chromadb = "^0.5.5"
+firecrawl = "^1.2.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

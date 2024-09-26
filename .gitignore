@@ -1,0 +1,7 @@
+.env
+*.pyc
+context.py
+*.txt
+*.json
+*.html
+*.sqlite3
