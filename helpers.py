@@ -53,7 +53,7 @@ def fetch_context(message, collection, n=3):
     return context
 
 
-def sampleRandomExamples(nExamples = 10):
+def sampleRandomExamples(nExamples = 30):
 
     #Load 5 Random examples from json 
     samples = "/n Below are some examples of some previous tweets you sent - use these to help style your response. Note these cover a wide range of topics. "
@@ -71,7 +71,7 @@ def sampleRandomExamples(nExamples = 10):
 
 def constructPrompt(message, topic="", includeRise = False):
     samples = sampleRandomExamples(nExamples=50)
-    persona = "<style>" + config.persona  + samples + "</style>" + config.additionalInstructions
+    persona = "<style>" + config.persona  + samples + "</style>" 
     if topic == "":
         prompt = config.createPrompt() + persona + message
     else:
